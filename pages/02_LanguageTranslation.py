@@ -2,25 +2,26 @@ from langchain_groq import ChatGroq
 # from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
+from dotenv import load_dotenv
 import streamlit as st 
-
+load_dotenv()
 groq_api_key=st.secrets["GROQ_API_KEY"]
 
-model=ChatGroq(model="Llama-3.3-70b-Versatile", groq_api_key=groq_api_key)
+model=ChatGroq(model="Llama-3.3-70b-versatile", groq_api_key=groq_api_key)
 parser=StrOutputParser()
 
 
 # streamlit app
 st.title("Language Translation App")
-st.markdown(":orange[This app utilizes the computational power of `Groq` and the advanced language understanding of Meta's AI model `Llama 3.3` to provide accurate and efficient text translation capabilities across multiple languages]")
+st.write("This app uses the Groq AI model to translate text into different languages.")
 
 input_language=st.selectbox("Select a language",("Hindi", "Telugu", "Kannada","Tamil", "Malayalam", "Marathi", "Bengali" ,"French", "Spanish", "Japanese", "Chinese"))
-input_text=st.chat_input("Enter the text to be translated")
+input_text=st.text_input("Enter the text to be translated")
 
 
 # Translation button
 if st.button("Translate"):
-    if input_text == "":
+    if input_text.strip() == "":
         st.error("Please enter some text to translate.")
     else:
         # Define the prompt template
