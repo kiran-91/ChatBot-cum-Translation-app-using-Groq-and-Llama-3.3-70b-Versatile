@@ -18,7 +18,7 @@ prompt=ChatPromptTemplate.from_messages(
 
 # streamlit app 
 
-st.title("A simple ChatBot powered by Llama")
+st.title("🤖 A simple ChatBot powered by Llama")
 st.markdown("Leveraging `Groq's` innovative platform")
 st.markdown("Utilizing `Llama 3.3-70b-Versatile` model")
 input_text=st.chat_input("What question do you have in mind")
@@ -34,6 +34,6 @@ else:
         with st.spinner("Your response is being generated....."):
             response=chain.invoke({"Question":input_text})
             with st.container(border=True):
-                st.write(response)
+                st.success(response)
     except Exception as e:
             st.error(f"An error occured: {e}")

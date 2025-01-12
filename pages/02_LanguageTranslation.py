@@ -38,4 +38,4 @@ if st.button("Translate"):
         # Display the output
         st.write("Translated Text:")
         with st.container(border=True):
-            st.write(output_text)
+            st.success(output_text)
