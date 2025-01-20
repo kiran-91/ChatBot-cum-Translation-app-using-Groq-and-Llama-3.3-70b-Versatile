@@ -12,14 +12,17 @@ This application demonstrates how AI models can be utilized for diverse use case
 Whether you're seeking quick answers to queries or translating text into a preferred language, this application serves as a powerful example of integrating cutting-edge AI technology into real-world applications
 
 ```bash
-📁 Project Folder
-├── app.py                  # Main entry point for Streamlit
-├── pages/                  # For multi-page setup
-│   ├── 01_LanguageTranslation.py
-│   ├── 02_ChatBot.py
-├── requirements.txt        # Dependencies for the app
-├── Dockerfile              # For docker containerization
-└── README.md
+Directory structure:
+└── kiran-91-chatbot-cum-translation-app-using-groq-and-llama-3.3-70b-versatile/
+    ├── README.md
+    ├── App.py
+    ├── Dockerfile
+    ├── LICENSE
+    ├── requirements.txt
+    └── pages/
+        ├── 01_ChatBot.py
+        └── 02_LanguageTranslation.py
+
 ```
 
 
