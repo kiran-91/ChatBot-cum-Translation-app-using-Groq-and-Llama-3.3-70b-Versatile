@@ -56,28 +56,35 @@ Whether you're seeking quick answers to queries or translating text into a prefe
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/kiran-91/ChatBot-cum-Translation-app-using-Groq-and-Llama-3.3.git
-   cd ChatBot-cum-Translation-app-using-Groq-and-Llama-3.3
-   ```
+```bash
+git clone https://github.com/kiran-91/ChatBot-cum-Translation-app-using-Groq-and-Llama-3.3.git
+cd ChatBot-cum-Translation-app-using-Groq-and-Llama-3.3
+```
 
-2. Install the required Python packages:
+2. Create a virtual environment (optional but recommended):
+```bash
+python -m venv venv
+venv\Scripts\activate      # On Windows
+source venv/bin/activate   # On Linux/Mac
+```
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+3. Install the required Python packages:
 
-3. Create a `.sreamlit` folder and then create a `secrets.toml` file to securely store your API keys:
+```bash
+pip install -r requirements.txt
+```
 
-   ```env
-   GROQ_API_KEY=your_groq_api_key
-   ```
+4. Create a `.sreamlit` folder and then create a `secrets.toml` file to securely store your API keys:
 
-4. Run the Streamlit application:
+```env
+GROQ_API_KEY=<your_groq_api_key>
+```
 
-   ```bash
-   streamlit run App.py
-   ```
+5. Run the Streamlit application:
+
+```bash
+streamlit run App.py
+```
 
 ## Results
 If you're on Team Lazy like me and would rather skip all the tasks, no worries—just kick back and check out the Streamlit app right here!
@@ -116,7 +123,7 @@ Contributions are welcome! Feel free to fork the repository, create new features
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the General Public License-V3 License. See the `LICENSE` file for more details.
 
 ## Acknowledgments
 
