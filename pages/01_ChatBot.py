@@ -2,8 +2,9 @@ from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 import streamlit as st 
+import os
 
-groq_api_key=st.secrets["GROQ_API_KEY"]
+groq_api_key=os.getenv("GROQ_API_KEY")
 
 model=ChatGroq(model="Llama-3.3-70b-Versatile", groq_api_key=groq_api_key)
 parser=StrOutputParser()
