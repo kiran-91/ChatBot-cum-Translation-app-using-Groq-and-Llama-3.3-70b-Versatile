@@ -74,7 +74,7 @@ source venv/bin/activate   # On Linux/Mac
 pip install -r requirements.txt
 ```
 
-4. Create a `.sreamlit` folder and then create a `secrets.toml` file to securely store your API keys:
+4. Create a.env folder to securely store your API keys:
 
 ```env
 GROQ_API_KEY=<your_groq_api_key>
@@ -87,10 +87,7 @@ streamlit run App.py
 ```
 
 ## Results
-If you're on Team Lazy like me and would rather skip all the tasks, no worries—just kick back and check out the Streamlit app right here!
-   ```bash
-   https://chatbotstranslate.streamlit.app
-   ```
+> Important Update: Due to a recent security incident involving unauthorized use of my API keys in a DDoS attack, i have temporarily suspended cloud deployment of my Streamlit app and removed all those deployed apps. Please follow the installation guide to run the app locally. I am here to support you with any issues that may arise
 
 
 ## Usage
